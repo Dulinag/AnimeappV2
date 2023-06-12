@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import Carousel from 'react-bootstrap/Carousel';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+
 import './App.css';
 
 import styled from 'styled-components';
@@ -6,7 +10,7 @@ import styled from 'styled-components';
 const TitleContainer = styled.div`
   font-size: 50px;
   text-align: center;
-  padding-bottom: 3%;
+ 
 `;
 
 const Centerpage = styled.div`
@@ -48,6 +52,7 @@ const Centerpage2 = styled.div`
   align-items: center;
   text-align: center;
   padding-bottom: 3%;
+  padding-top: 3%;
 `;
 
 const TextSet = styled.div`
@@ -67,6 +72,22 @@ const Renderresult = styled.div`
   border: 1px solid black;
   height: 700px;
 `;
+
+const IMagestyler = styled.div`
+
+
+img {
+  width: 75%;
+  height: 25vh; /* Adjust the value as needed */
+  object-fit: cover;
+}
+
+
+padding-bottpm: 3%;
+
+
+`;
+
 
 const PageStyler = {
   boxShadow: 2,
@@ -127,6 +148,45 @@ const App = () => {
     <div className="app">
       <TitleContainer>ANIMANIA</TitleContainer>
 
+<IMagestyler>
+      <Carousel>
+      <Carousel.Item interval={1000}>
+      <img
+    className="d-block w-100"
+    src={require('./aot.jpg')}
+    alt="First slide"
+  />
+        <Carousel.Caption>
+          <h3>Attack On Titan</h3>
+          <p>Attack on Titan is a dark and intense anime series that depicts humanity's desperate struggle for survival against gigantic humanoid creatures known as Titans</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item interval={500}>
+        <img
+          className="d-block w-100"
+          src={require('./lu.jpg')}
+          alt="Second slide"
+        />
+        <Carousel.Caption>
+          <h3>One Piece</h3>
+          <p>One Piece is a long-running Japanese manga and anime series that follows the adventures of Monkey D. Luffy and his crew as they search for the ultimate treasure, the One Piece, and navigate the treacherous Grand Line.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <img
+    className="d-block w-100"
+    src={require('./vs.jpeg')}
+    alt="First slide"
+  />
+        <Carousel.Caption>
+          <h3>Vinland Saga</h3>
+          <p>
+          Vinland Saga is a historical manga and anime series that follows the journey of a young Viking warrior seeking revenge and discovering the complexities of war, power, and personal growth.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+    </IMagestyler>
       <Centerpage>
         <Centerpage2>
           <input
