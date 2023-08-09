@@ -1,1 +1,1 @@
-ANIMANIA: Find the perfect Anime for you
+ANIMANIA: Find the perfect "Animania: Your Ultimate Anime Companion" is a dynamic React-based anime app meticulously crafted to enhance your anime viewing experience. Powered by the robust Jikan API, it seamlessly delivers real-time anime data, from comprehensive show details to current airing schedules. Immerse yourself in the world of anime like never before with Animania's intuitive interface, rich features, and up-to-the-minute information, all designed to cater to the discerning anime enthusiast in you.Anime for you
